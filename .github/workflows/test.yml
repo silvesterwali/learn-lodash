@@ -1,4 +1,4 @@
-name: TDD
+name: CI
 
 on:
   push:
@@ -7,14 +7,14 @@ on:
     branches : [master]
   workflow_dispatch :
 
-job:
+jobs:
   build:
     runs-on : ubuntu-latest
     strategy:
-      matrix : ['16']
+      matrix :
+        node: ['16']
     name : Node ${{matrix.node}} test
     steps:
-     steps:
       - uses: actions/checkout@v3
       - name: Setup node
         uses: actions/setup-node@v3

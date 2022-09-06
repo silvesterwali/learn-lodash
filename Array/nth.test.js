@@ -1,4 +1,3 @@
-const { toNumber } = require("lodash");
 const _ = require("lodash");
 
 describe("_.nth(array, [n=0])", () => {

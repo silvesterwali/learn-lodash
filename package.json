@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "lodash": "^4.17.21",
-    "opengraphjs": "^1.1.0"
+    "opengraphjs": "^1.1.0",
+    "theme-colors": "^0.1.0",
+    "ufo": "^1.3.0"
   }
 }
